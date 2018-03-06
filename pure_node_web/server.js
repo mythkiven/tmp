@@ -26,9 +26,9 @@ http.createServer((request, response) => {
   	else {// 处理普通get请求
     	api.get(request, response);
   	}
-}).listen(3000);
+}).listen(3001);
 
-console.log('[Server Info] Start server at http://localhost:3000/');
+console.log('[Server Info] Start server at http://localhost:3001/');
 
 
 // 以上是通用的API模板。

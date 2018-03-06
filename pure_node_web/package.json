@@ -1,0 +1,11 @@
+{
+  "name": "yxzxapi",
+  "version": "1.0.0",
+  "description": "tiao shi yong de",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1282412855@qq.com",
+  "license": "ISC"
+}

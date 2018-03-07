@@ -12,7 +12,8 @@ var async = require('async');
 var routes = require('./routes/routes');  
 var app = express();
 
-app.set('port',3000);
+// 与生产环境保持一致
+app.set('port',3306);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -71,7 +72,7 @@ async.waterfall([
 		app.use(function(err,req,res,next){
 			res.status(err.status || 500);
 			res.render('404/error',{
-				message:err.message,
+				message:'ERROR',//err.message,
 				error:{}
 			});
 		});
